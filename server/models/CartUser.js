@@ -2,9 +2,7 @@ const {Model, DataTypes} = require("sequelize");
 const sequelize = require("../config/db/db")
 
 
-class CartUser extends Model {
-  
-}
+class CartUser extends Model { }
 
 CartUser.init(
     {

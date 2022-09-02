@@ -1,7 +1,9 @@
 const express = require("express");
-const { getAllCartHistory, createCartHistory } = require("../controllers/cartHistoryController");
-const { validateAuth } = require("../middleware/auth");
 const cartHistory = express.Router();
+
+const { validateAuth } = require("../middleware/auth");
+
+const { getAllCartHistory, createCartHistory } = require("../controllers/cartHistoryController");
 
 
 cartHistory.get("/",validateAuth, getAllCartHistory);
